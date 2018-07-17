@@ -53,7 +53,7 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <NavigationView panewidth="160" background={image} items={items} theme="light"/>
+        <NavigationView panewidth="160" background={image} items={items} theme="dark"/>
       </div>
     );
   }

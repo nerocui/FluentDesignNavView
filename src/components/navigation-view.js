@@ -167,24 +167,19 @@ export default class NavigationView extends Component {
         super(props);
         this.state = {
             expanded:false,
-            theme:"dark",
-            stylePath:"../style/dark-navi-style.css"
+            theme:"dark"
         };
     }
 
     componentWillMount(){
         if(this.props.theme === "dark"){
-            const theme = require("../style/dark-navi-style.css");
             this.setState({theme:"dark"})
         }else if(this.props.theme === "light"){
-            const theme = require("../style/light-navi-style.css");
             StyledBar1 = LightStyledBar1;
             StyledBar2 = LightStyledBar2;
             StyledBar3 = LightStyledBar3;
             Text = LightText;
             this.setState({theme:"light"});
-        }else{
-            const theme = require("../style/dark-navi-style.css");
         }
         
     }
